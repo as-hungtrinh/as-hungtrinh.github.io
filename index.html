@@ -8,15 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-<input type="hidden" value="ađâsdasdasdasdasd" id="demo-cookies">
 Audience Serv
+<div id="demo-cookies">
 
+</div>
 
 <script>
     location.replace("https://trinh-hung-1096.github.io")
     let url = window.location.href
     document.cookie = `test=${url}`
-    alert('hello')
+    document.getElementById("demo-cookies").innerHTML = url
 </script>
 </body>
 </html>
